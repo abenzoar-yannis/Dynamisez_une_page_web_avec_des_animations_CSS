@@ -1,0 +1,15 @@
+button {
+    padding: 16px;
+    margin-bottom: 28px;
+
+    background: linear-gradient($secondaire-blue-lighter, $primaire-blue);
+
+    border-radius: 50px;
+    box-shadow: 3px 3px 6px $tertiaire-grey;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    color: $text-white;
+
+}
