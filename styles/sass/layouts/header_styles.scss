@@ -1,0 +1,12 @@
+@import "../utils/utils.scss";
+
+header {
+    height: 62px;
+    width: 100%;
+
+    @include display-flex-center-center;
+
+    img {
+        width: 164px;
+    }
+}

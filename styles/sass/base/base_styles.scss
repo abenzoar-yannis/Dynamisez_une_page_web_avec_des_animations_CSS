@@ -1,0 +1,19 @@
+@import "../utils/utils.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style-type: none;
+
+    color: black;
+    font-size: 14px;
+    font-family: "roboto";
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}

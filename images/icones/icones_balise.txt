@@ -1,0 +1,9 @@
+<i class="fas fa-map-marker-alt"></i>			Pointeur de localisation
+<i class="fas fa-mobile-alt"></i>			un mobile
+<i class="fas fa-list-ul"></i>				icone de menu "point-ligne_x3"
+<i class="fas fa-store"></i>				une échope
+<i class="far fa-heart"></i>				un coeur qui peut ce remplir
+<i class="fas fa-utensils"></i>				des couverts "fourchette-couteau"
+<i class="fas fa-hands-helping"></i>			une poigné de mains
+<i class="fas fa-arrow-left"></i>			fléche vers la gauche
+<i class="fas fa-check-circle"></i>			le v check

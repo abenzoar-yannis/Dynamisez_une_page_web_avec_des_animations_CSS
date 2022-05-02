@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  font-size: 14px;
+  font-family: "roboto";
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+header {
+  height: 62px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  width: 164px;
+}
+
+footer {
+  height: 200px;
+  width: 100%;
+  padding: 28px;
+  background-color: #353535;
+}
+footer * {
+  color: #F6F6F6;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  font-size: 17px;
+  margin-bottom: 21px;
+}
+footer li {
+  line-height: 24px;
+}
+footer i {
+  width: 20px;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */
