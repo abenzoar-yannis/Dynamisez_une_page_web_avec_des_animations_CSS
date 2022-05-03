@@ -129,6 +129,82 @@ form p {
   font-weight: 700;
 }
 
+#restaurants {
+  width: 100%;
+  padding: 5%;
+  background-color: #F6F6F6;
+}
+#restaurants h2 {
+  margin-bottom: 21px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.restaurants_card {
+  height: 250px;
+  width: 100%;
+  display: block;
+  margin-bottom: 21px;
+  border-radius: 16px;
+  box-shadow: 3px 3px 6px #99E2D0;
+  overflow: hidden;
+}
+.restaurants_card_img {
+  position: relative;
+  height: 175px;
+  width: 100%;
+  overflow: hidden;
+}
+.restaurants_card_img img {
+  height: 175px;
+  width: 100%;
+  object-fit: cover;
+}
+.restaurants_card_description {
+  height: 75px;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.restaurants_card_description_name {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.restaurants_card_description_name h3 {
+  font-weight: 700;
+}
+.restaurants_card_description_like {
+  position: relative;
+  height: 100%;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.restaurants_card_description_like i {
+  font-size: 20px;
+}
+
+.hover-heart {
+  position: absolute;
+  color: #9356DC;
+  opacity: 0;
+}
+.hover-heart:hover {
+  animation: hover-like 0.5s ease-in-out forwards;
+}
+
+@keyframes hover-like {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
 .submit-button {
   padding: 16px;
   margin-bottom: 28px;
