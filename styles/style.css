@@ -31,11 +31,20 @@ body {
 }
 
 header {
+  position: relative;
   height: 62px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+header a {
+  position: absolute;
+  left: 24px;
+  font-size: 21px;
+}
+header a i {
+  font-size: 24px;
 }
 header img {
   width: 164px;
