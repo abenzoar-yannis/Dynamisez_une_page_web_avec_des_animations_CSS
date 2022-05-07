@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@keyframes hover-like {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 100%;
+    transform: scale(1.11);
+    left: 25%;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -33,7 +44,7 @@ header img {
 footer {
   height: 200px;
   width: 100%;
-  padding: 28px;
+  padding: 16px 28px;
   background-color: #353535;
 }
 footer * {
@@ -42,7 +53,7 @@ footer * {
 footer h3 {
   font-family: "Shrikhand";
   font-size: 17px;
-  margin-bottom: 21px;
+  margin-bottom: 16px;
 }
 footer li {
   line-height: 24px;
@@ -68,6 +79,7 @@ form input {
   box-shadow: inset 0 3px 3px #99E2D0;
   text-align: center;
   font-weight: 700;
+  font-family: Arial, "Font Awesome 5 Free";
 }
 form h1 {
   width: 70%;
@@ -80,12 +92,12 @@ form p {
   padding-bottom: 21px;
   font-weight: 400;
   font-size: 18px;
-  color: #353535;
+  color: #6F6F6F;
 }
 
 #fonctionnement {
   width: 100%;
-  padding: 5%;
+  padding: 48px 24px;
 }
 #fonctionnement h2 {
   margin-bottom: 21px;
@@ -97,13 +109,13 @@ form p {
   position: relative;
   height: 74px;
   width: 100%;
-  margin-bottom: 14px;
-  border-radius: 16px;
-  background-color: #F6F6F6;
-  box-shadow: 3px 3px 6px #99E2D0;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 3px 3px 18px #99E2D0;
+  background-color: #F6F6F6;
+  margin-bottom: 24px;
 }
 .steps:hover {
   background-color: #F5EEFC;
@@ -116,14 +128,14 @@ form p {
   left: -10px;
   padding: 2px 7px;
   border-radius: 21px;
-  color: #F6F6F6;
   background-color: #9356DC;
+  color: #F6F6F6;
 }
 .steps i {
   position: absolute;
   left: 28px;
   font-size: 16px;
-  color: #777777;
+  color: #6F6F6F;
 }
 .steps .steps_definition {
   font-weight: 700;
@@ -131,7 +143,7 @@ form p {
 
 #restaurants {
   width: 100%;
-  padding: 5%;
+  padding: 48px 24px;
   background-color: #F6F6F6;
 }
 #restaurants h2 {
@@ -144,21 +156,23 @@ form p {
   height: 250px;
   width: 100%;
   display: block;
-  margin-bottom: 21px;
   border-radius: 16px;
-  box-shadow: 3px 3px 6px #99E2D0;
+  background-color: white;
+  box-shadow: 3px 3px 18px #99E2D0;
+  margin-bottom: 21px;
   overflow: hidden;
 }
 .restaurants_card_img {
   position: relative;
   height: 175px;
   width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   overflow: hidden;
 }
 .restaurants_card_img img {
-  height: 175px;
-  width: 100%;
-  object-fit: cover;
+  width: 105%;
 }
 .restaurants_card_description {
   height: 75px;
@@ -174,6 +188,8 @@ form p {
   justify-content: center;
 }
 .restaurants_card_description_name h3 {
+  font-size: 18px;
+  line-height: 29px;
   font-weight: 700;
 }
 .restaurants_card_description_like {
@@ -185,35 +201,53 @@ form p {
   align-items: center;
 }
 .restaurants_card_description_like i {
-  font-size: 20px;
+  font-size: 24px;
+}
+
+.restaurants_card:nth-of-type(2) .restaurants_card_img {
+  align-items: center;
 }
 
 .hover-heart {
   position: absolute;
   color: #9356DC;
   opacity: 0;
+  display: block;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .hover-heart:hover {
   animation: hover-like 0.5s ease-in-out forwards;
 }
 
-@keyframes hover-like {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100%;
-  }
-}
 .submit-button {
   padding: 16px;
   margin-bottom: 28px;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px;
-  box-shadow: 3px 3px 6px #99E2D0;
+  box-shadow: 3px 3px 18px #99E2D0;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   color: #F6F6F6;
+}
+.submit-button:hover {
+  background: linear-gradient(#ff88de, #9b63df);
+  box-shadow: 3px 3px 18px #4acbab;
+}
+
+.nouveau {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 6px 8px;
+  border-radius: 2px;
+  background-color: #99E2D0;
+}
+.nouveau p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #6F6F6F;
 }
 
 /*# sourceMappingURL=style.css.map */

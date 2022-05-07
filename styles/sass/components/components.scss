@@ -5,11 +5,29 @@
     background: linear-gradient($secondaire-blue-lighter, $primaire-blue);
 
     border-radius: 50px;
-    box-shadow: 3px 3px 6px $tertiaire-grey;
+    box-shadow: 3px 3px 18px $tertiaire-grey;
 
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
 
     color: $text-white;
+    &:hover {
+        background: linear-gradient(lighten($secondaire-blue-lighter, 3%), lighten($primaire-blue, 3%));
+        box-shadow: 3px 3px 18px darken($tertiaire-grey, 20%);
+    }
 
+}
+
+.nouveau {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 6px 8px;
+    border-radius: 2px;
+    background-color: $tertiaire-grey;
+    p {
+        font-size: 14px;
+        font-weight: 700;
+        color: $quaternaire-grey-darker;
+    }
 }

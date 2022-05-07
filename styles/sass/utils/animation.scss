@@ -1,0 +1,12 @@
+
+@keyframes hover-like {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 100%;
+        transform: scale(1.11);
+        left: 25%;
+    }
+}
