@@ -1,6 +1,11 @@
+
+#menu {
+    background-color: $background-grey-lighter;
+}
+
 #restaurant-header {
     position: relative;
-    height: 300px;
+    max-height: 300px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -30,7 +35,6 @@
 
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
-
     background-color: $background-grey-lighter;
     h1 {
         font-size: 26px;
@@ -39,5 +43,99 @@
     .like {
         bottom: 10px;
         margin-right: 28px;
+    }
+}
+
+#services {
+    width: 100%;
+    padding: 0 12px;
+    background-color: $background-grey-lighter;
+}
+.service {
+    width: 100%;
+    margin: 32px 0;
+    &_plats {
+        width: 100%;
+    }
+}
+
+.carte-de-plat {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding: 7px 0 7px 7px;
+    margin: 12px 0;
+    
+    border-radius: 16px;
+    box-shadow: 3px 3px 6px $tertiaire-grey;
+    
+    background-color: white;
+    
+    overflow: hidden;
+    &:hover {
+        .content {
+            min-width: calc(100% - $dimension-check-plat - $dimension-check-plat);
+        }
+        i {
+            animation: rotation 0.3s linear;
+            animation-iteration-count: 1;
+        }
+    }
+}
+.content {
+    min-width: calc(100% - $dimension-check-plat);
+    transition: 0.3s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    p, h2 {
+        width: 100%;
+        
+        overflow: hidden;
+        white-space: nowrap;
+    
+        text-overflow: ellipsis;
+    }
+    h2 {
+        font-weight: 700;
+    }
+}
+.right {
+    height: 100%;
+    width: calc($dimension-check-plat + $dimension-check-plat);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .prix {
+        height: 100%;
+        width: $dimension-check-plat;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        p {
+            text-align: right;
+            padding-right: 14px;
+            font-weight: 700;
+        }
+    }
+    .check {
+        height: 70px;
+        width: $dimension-check-plat;
+        @include display-flex-center-center;
+        background-color: $tertiaire-grey;
+        i {
+            font-size: 24px;
+            color: $text-white;
+        }
+    }
+}
+
+#commander {
+    width: 100%;
+    @include display-flex-center-center;
+    padding: 12px;
+    margin-bottom: 12px;
+    .submit-button {
+        padding: 16px 48px;
     }
 }

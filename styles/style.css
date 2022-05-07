@@ -11,6 +11,14 @@
     left: 25%;
   }
 }
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -206,9 +214,13 @@ form p {
   align-items: center;
 }
 
+#menu {
+  background-color: #F6F6F6;
+}
+
 #restaurant-header {
   position: relative;
-  height: 300px;
+  max-height: 300px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -249,6 +261,100 @@ form p {
   margin-right: 28px;
 }
 
+#services {
+  width: 100%;
+  padding: 0 12px;
+  background-color: #F6F6F6;
+}
+
+.service {
+  width: 100%;
+  margin: 32px 0;
+}
+.service_plats {
+  width: 100%;
+}
+
+.carte-de-plat {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  padding: 7px 0 7px 7px;
+  margin: 12px 0;
+  border-radius: 16px;
+  box-shadow: 3px 3px 6px #99E2D0;
+  background-color: white;
+  overflow: hidden;
+}
+.carte-de-plat:hover .content {
+  min-width: calc(100% - 60px - 60px);
+}
+.carte-de-plat:hover i {
+  animation: rotation 0.3s linear;
+  animation-iteration-count: 1;
+}
+
+.content {
+  min-width: calc(100% - 60px);
+  transition: 0.3s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.content p, .content h2 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.content h2 {
+  font-weight: 700;
+}
+
+.right {
+  height: 100%;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.right .prix {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.right .prix p {
+  text-align: right;
+  padding-right: 14px;
+  font-weight: 700;
+}
+.right .check {
+  height: 70px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+}
+.right .check i {
+  font-size: 24px;
+  color: #F6F6F6;
+}
+
+#commander {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+#commander .submit-button {
+  padding: 16px 48px;
+}
+
 .submit-button {
   padding: 16px;
   margin-bottom: 28px;
@@ -260,6 +366,7 @@ form p {
   color: #F6F6F6;
 }
 .submit-button:hover {
+  cursor: pointer;
   background: linear-gradient(#ff88de, #9b63df);
   box-shadow: 3px 3px 18px #4acbab;
 }
@@ -299,6 +406,13 @@ form p {
 }
 .like .hover-heart:hover {
   animation: hover-like 0.5s ease-in-out forwards;
+}
+
+.soulignement {
+  height: 3px;
+  width: 40px;
+  margin-top: 5px;
+  background-color: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */

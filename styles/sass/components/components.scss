@@ -12,6 +12,7 @@
 
     color: $text-white;
     &:hover {
+        cursor: pointer;
         background: linear-gradient(lighten($secondaire-blue-lighter, 3%), lighten($primaire-blue, 3%));
         box-shadow: 3px 3px 18px darken($tertiaire-grey, 20%);
     }
@@ -53,4 +54,11 @@
             animation: hover-like 0.5s ease-in-out forwards;
         }
     }
+}
+
+.soulignement {
+    height: 3px;
+    width: 40px;
+    margin-top: 5px;
+    background-color: $tertiaire-grey;
 }
