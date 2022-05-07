@@ -1,0 +1,43 @@
+#restaurant-header {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    img {
+        width: 110%;
+        align-self: center;
+    }
+}
+#restaurant-header, .la-note-enchantee-image {
+    justify-content: center;
+    img {
+        width: 100%;
+    }
+}
+#nom-du-restaurant {
+    position: absolute;
+    bottom: 0px;
+    min-height: 72px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    padding-left: 18px;
+
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+
+    background-color: $background-grey-lighter;
+    h1 {
+        font-size: 26px;
+        font-family: 'Shrikhand', Georgia, serif;
+    }
+    .like {
+        bottom: 10px;
+        margin-right: 28px;
+    }
+}
