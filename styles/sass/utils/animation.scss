@@ -11,12 +11,22 @@
     }
 }
 
-
 @keyframes rotation {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0);
     }
 }
