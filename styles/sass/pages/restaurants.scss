@@ -5,7 +5,7 @@
 
 #restaurant-header {
     position: relative;
-    max-height: 300px;
+    height: 300px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -16,10 +16,10 @@
         align-self: center;
     }
 }
-#restaurant-header, .la-note-enchantee-image {
+.la-note-enchantee {
     justify-content: center;
-    img {
-        width: 100%;
+    &_image {
+        width: 100% !important;
     }
 }
 #nom-du-restaurant {
@@ -48,12 +48,12 @@
 
 #services {
     width: 100%;
-    padding: 0 12px;
-    background-color: $background-grey-lighter;
+    padding: 0 18px;
+    padding-top: 32px;
 }
 .service {
     width: 100%;
-    margin: 32px 0;
+    margin-bottom: 32px;
     &_plats {
         width: 100%;
     }
@@ -131,10 +131,9 @@
 }
 
 #commander {
+    height: 120px;
     width: 100%;
     @include display-flex-center-center;
-    padding: 12px;
-    margin-bottom: 12px;
     .submit-button {
         padding: 16px 48px;
     }
