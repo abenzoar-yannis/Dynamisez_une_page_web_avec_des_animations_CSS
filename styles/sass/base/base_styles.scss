@@ -19,3 +19,17 @@ body {
     min-height: 100vh;
     width: 100%;
 }
+
+main {
+    width: 100%;
+}
+
+// Media Queries pour TABLETTE et DESKTOP
+@media all and (min-width: 720px) {
+    body {
+        @include display-flex-column-align-center;
+    }
+    main {
+        @include display-flex-column-align-center;
+    }
+}

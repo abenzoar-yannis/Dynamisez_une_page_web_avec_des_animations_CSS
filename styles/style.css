@@ -48,6 +48,23 @@ body {
   width: 100%;
 }
 
+main {
+  width: 100%;
+}
+
+@media all and (min-width: 720px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 header {
   position: relative;
   height: 62px;
@@ -91,6 +108,7 @@ footer i {
 }
 
 form {
+  width: 100%;
   background-color: #F6F6F6;
   text-align: center;
   padding-bottom: 35px;
@@ -227,6 +245,26 @@ form p {
   font-weight: 700;
 }
 
+@media all and (min-width: 720px) {
+  #fonctionnement {
+    width: 720px;
+  }
+
+  #restaurants {
+    width: 720px;
+    background-color: transparent;
+  }
+
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .restaurants_card {
+    width: 325px;
+  }
+}
 #menu {
   background-color: #F6F6F6;
 }
@@ -387,6 +425,28 @@ form p {
   padding: 16px 48px;
 }
 
+@media all and (min-width: 720px) {
+  #restaurant-header img {
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #nom-du-restaurant {
+    width: 720px;
+  }
+
+  #services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .service {
+    width: 375px;
+    margin-right: 18px;
+  }
+}
 .submit-button {
   padding: 16px;
   margin-bottom: 28px;

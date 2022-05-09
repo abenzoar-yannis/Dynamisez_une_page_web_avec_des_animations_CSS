@@ -134,3 +134,25 @@
         padding: 16px 48px;
     }
 }
+
+// Media Queries pour TABLETTE et DESKTOP
+@media all and (min-width: 720px) {
+    #restaurant-header {
+        img {
+            width: 110%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    #nom-du-restaurant {
+        width: 720px;
+    }
+    #services {
+        @include display-flex-content-center;
+        flex-wrap: wrap;
+    }
+    .service {
+        width: 375px;
+        margin-right: 18px;
+    }
+}

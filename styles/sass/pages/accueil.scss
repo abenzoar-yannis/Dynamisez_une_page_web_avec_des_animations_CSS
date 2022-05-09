@@ -1,5 +1,6 @@
 // Formulaire de recherche 
 form {
+    width: 100%;
     background-color: $background-white-grey;
     text-align: center;
     padding-bottom: 35px;
@@ -122,5 +123,24 @@ form {
         font-size: 18px;
         line-height: 29px;
         font-weight: 700;
+    }
+}
+
+// Media Queries pour TABLETTE et DESKTOP
+@media all and (min-width: 720px) {
+    #fonctionnement {
+        width: 720px;
+    }
+    #restaurants {
+        width: 720px;
+        background-color: transparent;
+    }
+    .restaurant {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .restaurants_card {
+        width: 325px;
     }
 }
