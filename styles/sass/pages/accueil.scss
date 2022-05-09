@@ -127,7 +127,14 @@ form {
 }
 
 // Media Queries pour TABLETTE et DESKTOP
+// tablette
 @media all and (min-width: 720px) {
+    form {
+        input {
+            width: 720px;
+            border-radius: 4px;
+        }
+    }
     #fonctionnement {
         width: 720px;
     }
@@ -142,5 +149,27 @@ form {
     }
     .restaurants_card {
         width: 325px;
+    }
+}
+// desktop
+@media all and (min-width: 1200px) {
+    #fonctionnement {
+        width: 100%;
+    }
+    #fonctionnement > div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .steps {
+        width: 325px;
+    }
+    #restaurants {
+        width: 100%;
+    }
+    .restaurant {
+        justify-content: space-evenly;
+    }
+    .restaurants_card {
+        margin-right: 18px;
     }
 }

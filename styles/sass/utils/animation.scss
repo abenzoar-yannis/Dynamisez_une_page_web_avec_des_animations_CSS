@@ -30,3 +30,19 @@
         transform: translateY(0);
     }
 }
+
+@keyframes dispariton {
+    0% {
+        opacity: 100%;
+        z-index: 1000;
+    }
+    99% {
+        opacity: 100%;
+        z-index: 1000;
+    }
+    100% {
+        opacity: 0%;
+        z-index: -1000;
+    }
+
+}

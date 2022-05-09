@@ -29,6 +29,20 @@
     transform: translateY(0);
   }
 }
+@keyframes dispariton {
+  0% {
+    opacity: 100%;
+    z-index: 1000;
+  }
+  99% {
+    opacity: 100%;
+    z-index: 1000;
+  }
+  100% {
+    opacity: 0%;
+    z-index: -1000;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -37,7 +51,7 @@
   list-style-type: none;
   color: black;
   font-size: 16px;
-  font-family: "roboto";
+  font-family: "roboto", Arial, sans-serif;
   font-weight: 400;
   background: none;
   border: none;
@@ -246,6 +260,11 @@ form p {
 }
 
 @media all and (min-width: 720px) {
+  form input {
+    width: 720px;
+    border-radius: 4px;
+  }
+
   #fonctionnement {
     width: 720px;
   }
@@ -263,6 +282,32 @@ form p {
 
   .restaurants_card {
     width: 325px;
+  }
+}
+@media all and (min-width: 1200px) {
+  #fonctionnement {
+    width: 100%;
+  }
+
+  #fonctionnement > div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .steps {
+    width: 325px;
+  }
+
+  #restaurants {
+    width: 100%;
+  }
+
+  .restaurant {
+    justify-content: space-evenly;
+  }
+
+  .restaurants_card {
+    margin-right: 18px;
   }
 }
 #menu {
@@ -508,6 +553,50 @@ form p {
   width: 40px;
   margin-top: 5px;
   background-color: #99E2D0;
+}
+
+.chargement {
+  position: fixed;
+  z-index: 1000;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  animation: dispariton 2s forwards;
+}
+
+.chargement_animation {
+  position: relative;
+  height: 275px;
+  width: 275px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 275px;
+  background-color: white;
+}
+.chargement_animation p {
+  font-size: 38px;
+  font-family: "Shrikhand", serif;
+}
+
+.chargement_animation::after, .chargement_animation::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -5px;
+  left: -5px;
+  height: 275px;
+  width: 275px;
+  box-shadow: 3px 3px 12px #DFDFDF;
+  border-top: solid 5px #FF79DA;
+  border-bottom: solid 5px #FF79DA;
+  border-left: solid 5px #9356DC;
+  border-right: solid 5px #9356DC;
+  border-radius: 275px;
+  animation: rotation 2s linear;
 }
 
 /*# sourceMappingURL=style.css.map */

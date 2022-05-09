@@ -60,3 +60,48 @@
     margin-top: 5px;
     background-color: $tertiaire;
 }
+
+.chargement {
+    position: fixed;
+    z-index: 1000;
+
+    min-height: 100vh;
+    width: 100%;
+
+    @include display-flex-center-center;
+
+    background-color: $background-white-grey;
+    animation: dispariton 2s forwards;
+}
+.chargement_animation {
+    position: relative;
+    height: 275px;
+    width: 275px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 275px;
+    background-color: white;
+    p {
+        font-size: 38px;
+        font-family: 'Shrikhand', serif;
+    }
+}
+.chargement_animation::after, .chargement_animation::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+    left: -5px;
+    height: 275px;
+    width: 275px;
+    box-shadow: 3px 3px 12px $shadow-grey;
+    border-top: solid 5px $secondaire-blue-lighter;
+    border-bottom: solid 5px $secondaire-blue-lighter;
+    border-left: solid 5px $primaire-blue;
+    border-right: solid 5px $primaire-blue;
+    border-radius: 275px;
+    animation: rotation 2s linear;
+}
