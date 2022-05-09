@@ -1,3 +1,5 @@
+/* bouton de submition
+./sass/components/components.scss */
 .submit-button {
     padding: 16px;
     margin-bottom: 28px;
@@ -15,6 +17,8 @@
 
 }
 
+/* Etiquette "Nouveau"
+./sass/components/components.scss */
 .nouveau {
     position: absolute;
     top: 16px;
@@ -29,6 +33,8 @@
     }
 }
 
+/* Bouton Like
+./sass/components/components.scss */
 .like {
     position: relative;
     width: 48px;
@@ -54,6 +60,8 @@
     }
 }
 
+/* Barre de soulignement des different services
+./sass/components/components.scss */
 .soulignement {
     height: 3px;
     width: 40px;
@@ -61,6 +69,8 @@
     background-color: $tertiaire;
 }
 
+/* Animation de chargement de page
+./sass/components/components.scss */
 .chargement {
     position: fixed;
     z-index: 1000;

@@ -1,4 +1,6 @@
-// Formulaire de recherche 
+/* Partie accueil
+./sass/pages/accueil.scss */
+/* Formulaire de recherche */
 form {
     width: 100%;
     background-color: $background-white-grey;
@@ -31,7 +33,7 @@ form {
     }
 }
 
-// Section Fonctionnement
+/* Section Fonctionnement */
 #fonctionnement {
     width: 100%;
     padding: 48px 24px;
@@ -74,7 +76,7 @@ form {
     }
 }
 
-// Partie Restaurants
+/* Section Restaurants */
 #restaurants {
     width: 100%;
     padding: 48px 24px;
@@ -126,8 +128,8 @@ form {
     }
 }
 
-// Media Queries pour TABLETTE et DESKTOP
-// tablette
+/* Media Queries pour TABLETTE et DESKTOP */
+/* tablette */
 @media all and (min-width: 720px) {
     form {
         input {
@@ -151,7 +153,7 @@ form {
         width: 325px;
     }
 }
-// desktop
+/* desktop */
 @media all and (min-width: 1200px) {
     #fonctionnement {
         width: 100%;

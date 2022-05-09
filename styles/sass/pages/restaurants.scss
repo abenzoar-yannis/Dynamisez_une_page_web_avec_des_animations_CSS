@@ -1,8 +1,10 @@
-
+/* Partie restaurant
+./sass/pages/restaurants.scss */
 #menu {
     background-color: $background-white-grey;
 }
-
+/* Section header
+./sass/pages/restaurants.scss */
 #restaurant-header {
     position: relative;
     height: 300px;
@@ -43,7 +45,8 @@
         margin-right: 28px;
     }
 }
-
+/* Section services
+./sass/pages/restaurants.scss */
 #services {
     width: 100%;
     padding: 0 18px;
@@ -56,7 +59,8 @@
         width: 100%;
     }
 }
-
+/* Carte des plats
+./sass/pages/restaurants.scss */
 .carte-de-plat {
     width: 100%;
     height: 70px;
@@ -135,7 +139,8 @@
     }
 }
 
-// Media Queries pour TABLETTE et DESKTOP
+/* Media Queries pour TABLETTE et DESKTOP
+./sass/pages/restaurants.scss */
 @media all and (min-width: 720px) {
     #restaurant-header {
         img {

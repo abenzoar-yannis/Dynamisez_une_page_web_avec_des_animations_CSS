@@ -1,4 +1,5 @@
-
+/* Propriété général et écrasement des propriétés par default.
+./sass/base/base_styles.scss */
 * {
     padding: 0;
     margin: 0;
@@ -24,7 +25,7 @@ main {
     width: 100%;
 }
 
-// Media Queries pour TABLETTE et DESKTOP
+/* Media Queries pour TABLETTE et DESKTOP */
 @media all and (min-width: 720px) {
     body {
         @include display-flex-column-align-center;

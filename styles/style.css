@@ -1,5 +1,14 @@
+@charset "UTF-8";
+/* Varible de couleur et dimension */
+/* Les Fonts Google */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* Mes Mixins */
+/* --- Display flex Mixins --- */
+/* --- Autres mixins --- */
+/* Les Animations
+./sass/utils/animation.scss */
+/* animation pour le bouton like */
 @keyframes hover-like {
   from {
     opacity: 0;
@@ -11,6 +20,7 @@
     left: 25%;
   }
 }
+/* animation de rotation */
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -19,6 +29,7 @@
     transform: rotate(360deg);
   }
 }
+/* animation d'apparition pour les carte de plat */
 @keyframes apparition {
   from {
     opacity: 0;
@@ -29,6 +40,7 @@
     transform: translateY(0);
   }
 }
+/* animation de disparition pour mon animation de chargement */
 @keyframes dispariton {
   0% {
     opacity: 100%;
@@ -43,6 +55,8 @@
     z-index: -1000;
   }
 }
+/* Propriété général et écrasement des propriétés par default.
+./sass/base/base_styles.scss */
 * {
   padding: 0;
   margin: 0;
@@ -66,6 +80,7 @@ main {
   width: 100%;
 }
 
+/* Media Queries pour TABLETTE et DESKTOP */
 @media all and (min-width: 720px) {
   body {
     display: flex;
@@ -79,6 +94,8 @@ main {
     align-items: center;
   }
 }
+/* Partie header
+./sass/layouts/header_styles.scss */
 header {
   position: relative;
   height: 62px;
@@ -99,6 +116,8 @@ header img {
   width: 164px;
 }
 
+/* Partie footer
+./sass/layouts/footer_styles.scss */
 footer {
   height: 200px;
   width: 100%;
@@ -121,6 +140,9 @@ footer i {
   font-size: 12px;
 }
 
+/* Partie accueil
+./sass/pages/accueil.scss */
+/* Formulaire de recherche */
 form {
   width: 100%;
   background-color: #F6F6F6;
@@ -154,6 +176,7 @@ form p {
   color: #6F6F6F;
 }
 
+/* Section Fonctionnement */
 #fonctionnement {
   width: 100%;
   padding: 48px 24px;
@@ -200,6 +223,7 @@ form p {
   font-weight: 700;
 }
 
+/* Section Restaurants */
 #restaurants {
   width: 100%;
   padding: 48px 24px;
@@ -259,6 +283,8 @@ form p {
   font-weight: 700;
 }
 
+/* Media Queries pour TABLETTE et DESKTOP */
+/* tablette */
 @media all and (min-width: 720px) {
   form input {
     width: 720px;
@@ -284,6 +310,7 @@ form p {
     width: 325px;
   }
 }
+/* desktop */
 @media all and (min-width: 1200px) {
   #fonctionnement {
     width: 100%;
@@ -310,10 +337,14 @@ form p {
     margin-right: 18px;
   }
 }
+/* Partie restaurant
+./sass/pages/restaurants.scss */
 #menu {
   background-color: #F6F6F6;
 }
 
+/* Section header
+./sass/pages/restaurants.scss */
 #restaurant-header {
   position: relative;
   height: 300px;
@@ -357,6 +388,8 @@ form p {
   margin-right: 28px;
 }
 
+/* Section services
+./sass/pages/restaurants.scss */
 #services {
   width: 100%;
   padding: 0 18px;
@@ -371,6 +404,8 @@ form p {
   width: 100%;
 }
 
+/* Carte des plats
+./sass/pages/restaurants.scss */
 .carte-de-plat {
   width: 100%;
   height: 70px;
@@ -470,6 +505,8 @@ form p {
   padding: 16px 48px;
 }
 
+/* Media Queries pour TABLETTE et DESKTOP
+./sass/pages/restaurants.scss */
 @media all and (min-width: 720px) {
   #restaurant-header img {
     width: 110%;
@@ -492,6 +529,8 @@ form p {
     margin-right: 18px;
   }
 }
+/* bouton de submition
+./sass/components/components.scss */
 .submit-button {
   padding: 16px;
   margin-bottom: 28px;
@@ -508,6 +547,8 @@ form p {
   box-shadow: 3px 3px 18px #4acbab;
 }
 
+/* Etiquette "Nouveau"
+./sass/components/components.scss */
 .nouveau {
   position: absolute;
   top: 16px;
@@ -522,6 +563,8 @@ form p {
   color: #6F6F6F;
 }
 
+/* Bouton Like
+./sass/components/components.scss */
 .like {
   position: relative;
   width: 48px;
@@ -548,6 +591,8 @@ form p {
   animation: hover-like 0.5s ease-in-out forwards;
 }
 
+/* Barre de soulignement des different services
+./sass/components/components.scss */
 .soulignement {
   height: 3px;
   width: 40px;
@@ -555,6 +600,8 @@ form p {
   background-color: #99E2D0;
 }
 
+/* Animation de chargement de page
+./sass/components/components.scss */
 .chargement {
   position: fixed;
   z-index: 1000;

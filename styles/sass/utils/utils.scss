@@ -1,4 +1,4 @@
-// VARIABLES 
+/* Varible de couleur et dimension */
 $primaire-blue: #9356DC;
 $secondaire-blue-lighter: #FF79DA;
 $tertiaire: #99E2D0;
@@ -9,12 +9,12 @@ $darker-grey: #6F6F6F;
 
 $dimension-check-plat: 60px;
 
-// POLICES
+/* Les Fonts Google */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-// MIXINS
-// --- Display flex Mixins --- \\
+/* Mes Mixins */
+/* --- Display flex Mixins --- */
 @mixin display-flex-content-center {
     display: flex;
     justify-content: center;
@@ -42,7 +42,7 @@ $dimension-check-plat: 60px;
     flex-direction: column;
     justify-content: center;
 }
-// --- Autres mixins --- \\
+/* --- Autres mixins --- */
 @mixin card-bordur-radius-box-shadow {
     border-radius: 16px;
     box-shadow: 3px 3px 12px $shadow-grey;
