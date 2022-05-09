@@ -62,7 +62,7 @@ header a {
   font-size: 21px;
 }
 header a i {
-  font-size: 24px;
+  font-size: 22px;
 }
 header img {
   width: 164px;
@@ -71,7 +71,7 @@ header img {
 footer {
   height: 200px;
   width: 100%;
-  padding: 16px 28px;
+  padding: 24px 28px;
   background-color: #353535;
 }
 footer * {
@@ -79,14 +79,14 @@ footer * {
 }
 footer h3 {
   font-family: "Shrikhand";
-  font-size: 17px;
+  font-size: 18px;
   margin-bottom: 16px;
 }
 footer li {
-  line-height: 24px;
+  line-height: 26px;
 }
 footer i {
-  width: 20px;
+  width: 22px;
   font-size: 12px;
 }
 
@@ -140,7 +140,7 @@ form p {
   justify-content: center;
   align-items: center;
   border-radius: 16px;
-  box-shadow: 3px 3px 18px #99E2D0;
+  box-shadow: 3px 3px 12px #DFDFDF;
   background-color: #F6F6F6;
   margin-bottom: 24px;
 }
@@ -184,23 +184,29 @@ form p {
   width: 100%;
   display: block;
   border-radius: 16px;
+  box-shadow: 3px 3px 12px #DFDFDF;
   background-color: white;
-  box-shadow: 3px 3px 18px #99E2D0;
   margin-bottom: 21px;
   overflow: hidden;
 }
+
 .restaurants_card_img {
   position: relative;
   height: 175px;
   width: 100%;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
+  align-items: flex-end;
   overflow: hidden;
 }
 .restaurants_card_img img {
   width: 105%;
 }
+
+.restaurants_card:nth-of-type(2) .restaurants_card_img {
+  align-items: center;
+}
+
 .restaurants_card_description {
   height: 75px;
   width: 100%;
@@ -208,6 +214,7 @@ form p {
   display: flex;
   justify-content: space-between;
 }
+
 .restaurants_card_description_name {
   height: 100%;
   display: flex;
@@ -218,10 +225,6 @@ form p {
   font-size: 18px;
   line-height: 29px;
   font-weight: 700;
-}
-
-.restaurants_card:nth-of-type(2) .restaurants_card_img {
-  align-items: center;
 }
 
 #menu {
@@ -292,8 +295,9 @@ form p {
   padding: 7px 0 7px 7px;
   margin: 12px 0;
   border-radius: 16px;
-  box-shadow: 3px 3px 6px #99E2D0;
+  box-shadow: 3px 3px 12px #DFDFDF;
   background-color: white;
+  cursor: pointer;
   overflow: hidden;
   opacity: 0;
   animation: 1s 3s apparition forwards;
@@ -345,19 +349,21 @@ form p {
   align-items: center;
   justify-content: flex-start;
 }
-.right .prix {
+
+.prix {
   height: 100%;
   width: 60px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-.right .prix p {
+.prix p {
   text-align: right;
   padding-right: 14px;
   font-weight: 700;
 }
-.right .check {
+
+.check {
   height: 70px;
   width: 60px;
   display: flex;
@@ -365,7 +371,7 @@ form p {
   align-items: center;
   background-color: #99E2D0;
 }
-.right .check i {
+.check i {
   font-size: 24px;
   color: #F6F6F6;
 }
@@ -417,6 +423,9 @@ form p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.like:hover {
+  cursor: pointer;
 }
 .like i {
   font-size: 24px;

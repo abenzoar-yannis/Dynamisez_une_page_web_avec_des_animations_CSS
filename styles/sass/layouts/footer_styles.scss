@@ -2,22 +2,21 @@
 footer {
     height: 200px;
     width: 100%;
-    padding: 16px 28px;
+    padding: 24px 28px;
     background-color: #353535;
-
     * {
-        color: $text-white;
+        color: $white-grey;
     }
     h3 {
         font-family: "Shrikhand";
-        font-size: 17px;
+        font-size: 18px;
         margin-bottom: 16px;
     }
     li {
-        line-height: 24px;
+        line-height: 26px;
     }
     i {
-        width: 20px;
+        width: 22px;
         font-size: 12px;
     }
 }

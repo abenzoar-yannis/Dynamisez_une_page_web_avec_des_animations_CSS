@@ -1,10 +1,11 @@
 // VARIABLES 
 $primaire-blue: #9356DC;
 $secondaire-blue-lighter: #FF79DA;
-$tertiaire-grey: #99E2D0;
-$quaternaire-grey-darker: #6F6F6F;
-$text-white: #F6F6F6;
-$background-grey-lighter: #F6F6F6;
+$tertiaire: #99E2D0;
+$background-white-grey: #F6F6F6;
+$white-grey: #F6F6F6;
+$shadow-grey: #DFDFDF;
+$darker-grey: #6F6F6F;
 
 $dimension-check-plat: 60px;
 
@@ -13,13 +14,36 @@ $dimension-check-plat: 60px;
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 // MIXINS
+// --- Display flex Mixins --- \\
+@mixin display-flex-content-center {
+    display: flex;
+    justify-content: center;
+}
+@mixin display-flex-align-center {
+    display: flex;
+    align-items: center;
+}
+@mixin display-flex-column {
+    display: flex;
+    flex-direction: column;
+}
 @mixin display-flex-center-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@mixin display-flex-column-center {
+@mixin display-flex-column-align-center {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+@mixin display-flex-column-content-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+// --- Autres mixins --- \\
+@mixin card-bordur-radius-box-shadow {
+    border-radius: 16px;
+    box-shadow: 3px 3px 12px $shadow-grey;
 }

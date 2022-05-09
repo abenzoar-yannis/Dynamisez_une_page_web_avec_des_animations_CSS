@@ -1,20 +1,16 @@
 .submit-button {
     padding: 16px;
     margin-bottom: 28px;
-
     background: linear-gradient($secondaire-blue-lighter, $primaire-blue);
-
     border-radius: 50px;
-    box-shadow: 3px 3px 18px $tertiaire-grey;
-
+    box-shadow: 3px 3px 18px $tertiaire;
     font-size: 16px;
     font-weight: 400;
-
-    color: $text-white;
+    color: $white-grey;
     &:hover {
         cursor: pointer;
         background: linear-gradient(lighten($secondaire-blue-lighter, 3%), lighten($primaire-blue, 3%));
-        box-shadow: 3px 3px 18px darken($tertiaire-grey, 20%);
+        box-shadow: 3px 3px 18px darken($tertiaire, 20%);
     }
 
 }
@@ -25,19 +21,21 @@
     right: 16px;
     padding: 6px 8px;
     border-radius: 2px;
-    background-color: $tertiaire-grey;
+    background-color: $tertiaire;
     p {
         font-size: 14px;
         font-weight: 700;
-        color: $quaternaire-grey-darker;
+        color: $darker-grey;
     }
 }
 
 .like {
     position: relative;
-    // height: 100%;
     width: 48px;
     @include display-flex-center-center;
+    &:hover {
+        cursor: pointer;
+    }
     i {
         font-size: 24px;
     }
@@ -60,5 +58,5 @@
     height: 3px;
     width: 40px;
     margin-top: 5px;
-    background-color: $tertiaire-grey;
+    background-color: $tertiaire;
 }

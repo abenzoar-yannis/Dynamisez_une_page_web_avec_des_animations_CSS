@@ -1,15 +1,13 @@
 
 #menu {
-    background-color: $background-grey-lighter;
+    background-color: $background-white-grey;
 }
 
 #restaurant-header {
     position: relative;
     height: 300px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include display-flex-column-align-center;
     overflow: hidden;
     img {
         width: 110%;
@@ -35,7 +33,7 @@
 
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
-    background-color: $background-grey-lighter;
+    background-color: $background-white-grey;
     h1 {
         font-size: 26px;
         font-family: 'Shrikhand', Georgia, serif;
@@ -65,12 +63,9 @@
     display: flex;
     padding: 7px 0 7px 7px;
     margin: 12px 0;
-    
-    border-radius: 16px;
-    box-shadow: 3px 3px 6px $tertiaire-grey;
-    
+    @include card-bordur-radius-box-shadow;
     background-color: white;
-    
+    cursor: pointer;
     overflow: hidden;
     &:hover {
         .content {
@@ -82,7 +77,6 @@
         }
     }
     opacity: 0;
-
     animation:  1s 3s apparition forwards;
     @for $i from 1 through 5 {
         &:nth-of-type(#{$i}n) {
@@ -93,15 +87,12 @@
 .content {
     min-width: calc(100% - $dimension-check-plat);
     transition: 0.3s linear;
-    display: flex;
-    flex-direction: column;
+    @include display-flex-column;
     justify-content: space-evenly;
     p, h2 {
-        width: 100%;
-        
+        width: 100%;     
         overflow: hidden;
         white-space: nowrap;
-    
         text-overflow: ellipsis;
     }
     h2 {
@@ -111,33 +102,30 @@
 .right {
     height: 100%;
     width: calc($dimension-check-plat + $dimension-check-plat);
-    display: flex;
-    align-items: center;
+    @include display-flex-align-center;
     justify-content: flex-start;
-    .prix {
-        height: 100%;
-        width: $dimension-check-plat;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        p {
-            text-align: right;
-            padding-right: 14px;
-            font-weight: 700;
-        }
-    }
-    .check {
-        height: 70px;
-        width: $dimension-check-plat;
-        @include display-flex-center-center;
-        background-color: $tertiaire-grey;
-        i {
-            font-size: 24px;
-            color: $text-white;
-        }
+}
+.prix {
+    height: 100%;
+    width: $dimension-check-plat;
+    @include display-flex-content-center;
+    align-items: flex-end;
+    p {
+        text-align: right;
+        padding-right: 14px;
+        font-weight: 700;
     }
 }
-
+.check {
+    height: 70px;
+    width: $dimension-check-plat;
+    @include display-flex-center-center;
+    background-color: $tertiaire;
+    i {
+        font-size: 24px;
+        color: $white-grey;
+    }
+}
 #commander {
     height: 120px;
     width: 100%;
