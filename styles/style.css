@@ -116,30 +116,6 @@ header img {
   width: 164px;
 }
 
-/* Partie footer
-./sass/layouts/footer_styles.scss */
-footer {
-  height: 200px;
-  width: 100%;
-  padding: 24px 28px;
-  background-color: #353535;
-}
-footer * {
-  color: #F6F6F6;
-}
-footer h3 {
-  font-family: "Shrikhand";
-  font-size: 18px;
-  margin-bottom: 16px;
-}
-footer li {
-  line-height: 26px;
-}
-footer i {
-  width: 22px;
-  font-size: 12px;
-}
-
 /* Partie accueil
 ./sass/pages/accueil.scss */
 /* Formulaire de recherche */
@@ -151,16 +127,6 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-form input {
-  height: 50px;
-  width: 100%;
-  margin-bottom: 35px;
-  background-color: #EAEAEA;
-  box-shadow: inset 0 3px 3px #99E2D0;
-  text-align: center;
-  font-weight: 700;
-  font-family: Arial, "Font Awesome 5 Free";
 }
 form h1 {
   width: 70%;
@@ -176,12 +142,45 @@ form p {
   color: #6F6F6F;
 }
 
+.recherche {
+  position: relative;
+  width: 100%;
+}
+.recherche label {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  left: calc(50% - 77px);
+  font-weight: 700;
+  color: #6F6F6F;
+}
+.recherche label i {
+  color: #6F6F6F;
+  margin-right: 24px;
+}
+.recherche input {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 35px;
+  background-color: #EAEAEA;
+  box-shadow: inset 0 3px 3px #99E2D0;
+  text-align: center;
+  font-weight: 700;
+  font-family: Arial, "Font Awesome 5 Free";
+}
+.recherche input:focus {
+  z-index: 2;
+}
+
 /* Section Fonctionnement */
 #fonctionnement {
   width: 100%;
-  padding: 48px 24px;
+  padding: 48px 24px 48px 36px;
 }
 #fonctionnement h2 {
+  position: relative;
+  left: -8px;
   margin-bottom: 21px;
   font-size: 21px;
   font-weight: 700;
@@ -256,7 +255,9 @@ form p {
   overflow: hidden;
 }
 .restaurants_card_img img {
-  width: 105%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .restaurants_card:nth-of-type(2) .restaurants_card_img {
@@ -325,7 +326,8 @@ form p {
   }
 
   .restaurant {
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .restaurants_card {
@@ -336,6 +338,7 @@ form p {
 ./sass/pages/restaurants.scss */
 #menu {
   background-color: #F6F6F6;
+  padding-bottom: 24px;
 }
 
 /* Section header
@@ -387,8 +390,7 @@ form p {
 ./sass/pages/restaurants.scss */
 #services {
   width: 100%;
-  padding: 0 18px;
-  padding-top: 32px;
+  padding: 32px 18px 0 18px;
 }
 
 .service {
@@ -419,7 +421,7 @@ form p {
   min-width: calc(100% - 60px - 60px);
 }
 .carte-de-plat:hover i {
-  animation: rotation 0.3s linear;
+  animation: rotation 0.4s linear;
   animation-iteration-count: 1;
 }
 .carte-de-plat:nth-of-type(1n) {
@@ -440,7 +442,7 @@ form p {
 
 .content {
   min-width: calc(100% - 60px);
-  transition: 0.3s linear;
+  transition: 0.4s linear;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -563,6 +565,7 @@ form p {
 .like {
   position: relative;
   width: 48px;
+  scale: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -583,7 +586,7 @@ form p {
   -webkit-text-fill-color: transparent;
 }
 .like .hover-heart:hover {
-  animation: hover-like 0.5s ease-in-out forwards;
+  animation: hover-like 0.2s ease-in-out forwards;
 }
 
 /* Barre de soulignement des different services
@@ -639,6 +642,30 @@ form p {
   border-right: solid 5px #9356DC;
   border-radius: 275px;
   animation: rotation 2s linear;
+}
+
+/* Partie footer
+./sass/layouts/footer_styles.scss */
+footer {
+  height: 200px;
+  width: 100%;
+  padding: 24px 28px;
+  background-color: #353535;
+}
+footer * {
+  color: #F6F6F6;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+footer li {
+  line-height: 26px;
+}
+footer i {
+  width: 22px;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

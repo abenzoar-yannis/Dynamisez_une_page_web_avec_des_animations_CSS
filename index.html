@@ -12,23 +12,32 @@
 
 </head>
 <body>
+    <!-- L'animation de chargement de la page  -->
     <div class="chargement">
         <div class="chargement_animation">
             <p>Chargement</p>
         </div>
     </div>
-
+    <!-- Partie header de la page  -->
     <header>
         <img src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood">
     </header>
-
+    <!-- Partie principale de la page  -->
     <main>
-        <form action="#" method="post">
-            <input type="search" name="recherche" id="recherche" placeholder="&#xf3c5;   Paris, Belleville">
+        <!-- le formulaire de recherche de la page -->
+        <form action="#">
+            <div class="recherche">
+                <label for="recherche"><i class="fas fa-map-marker-alt"></i> Paris, Belleville</label>
+                <input type="search" name="recherche" id="recherche">
+            </div>
+            <!-- Autre solution plus simple et esthétique d'implémenter le placeholder.
+            par contre il y aura un avertissement W3C pour l'l'utilisation de l'unicode.
+           <input type="search" name="recherche" id="recherche" placeholder="&#xf3c5;   Paris, Belleville">    -->
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exeptions, séléctionnés par nos soins</p>
             <button type="submit" class="submit-button">Explorez nos restaurants</button>
         </form>
+        <!-- la partie fonctionnement de la page -->
         <section id="fonctionnement">
             <h2>Fonctionnement</h2>
             <div>
@@ -49,6 +58,7 @@
                 </a>
             </div>
         </section>
+        <!-- la partie restaurants de la page -->
         <section id="restaurants">
             <h2>Restaurants</h2>
             <div class="restaurant">
@@ -121,7 +131,7 @@
             </div>
         </section>
     </main>
-
+    <!-- la partie footer de la page  -->
     <footer>
         <h3>ohmyfood</h3>
         <ul>

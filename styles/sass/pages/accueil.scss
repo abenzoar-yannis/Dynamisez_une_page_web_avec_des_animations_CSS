@@ -7,17 +7,6 @@ form {
     text-align: center;
     padding-bottom: 35px;
     @include display-flex-column-align-center;
-    input {
-        height: 50px;
-        width: 100%;
-        margin-bottom: 35px;
-
-        background-color: #EAEAEA;
-        box-shadow: inset 0 3px 3px $tertiaire;
-        text-align: center;
-        font-weight: 700;
-        font-family: Arial, 'Font Awesome 5 Free';
-    }
     h1 {
         width: 70%;
         font-size: 24px;
@@ -32,12 +21,45 @@ form {
         color: $darker-grey;
     }
 }
+.recherche {
+    position: relative;
+    width: 100%;
+    label {
+        position: absolute;
+        z-index: 1;
+        top: 15px;
+        left: calc(50% - 77px);
+        font-weight: 700;
+        color: $darker-grey;
+        i {
+            color: $darker-grey;
+            margin-right: 24px;
+        }
+    }
+    input {
+        position: relative;
+        height: 50px;
+        width: 100%;
+        margin-bottom: 35px;
+
+        background-color: #EAEAEA;
+        box-shadow: inset 0 3px 3px $tertiaire;
+        text-align: center;
+        font-weight: 700;
+        font-family: Arial, 'Font Awesome 5 Free';
+        &:focus {
+            z-index: 2;
+        }
+    }
+}
 
 /* Section Fonctionnement */
 #fonctionnement {
     width: 100%;
-    padding: 48px 24px;
+    padding: 48px 24px 48px 36px;
     h2 {
+        position: relative;
+        left: -8px;
         margin-bottom: 21px;
         font-size: 21px;
         font-weight: 700;
@@ -105,7 +127,9 @@ form {
     align-items: flex-end;
     overflow: hidden;
     img {
-        width: 105%;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 }
 .restaurants_card:nth-of-type(2) .restaurants_card_img {
@@ -131,12 +155,6 @@ form {
 /* Media Queries pour TABLETTE et DESKTOP */
 /* tablette */
 @media all and (min-width: 720px) {
-    // form {
-    //     input {
-    //         width: 720px;
-    //         border-radius: 4px;
-    //     }
-    // }
     #fonctionnement {
         width: 720px;
     }
@@ -169,7 +187,8 @@ form {
         width: 100%;
     }
     .restaurant {
-        justify-content: space-evenly;
+        justify-content: space-between;
+        align-items: center;
     }
     .restaurants_card {
         margin-right: 18px;

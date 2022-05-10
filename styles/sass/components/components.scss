@@ -38,6 +38,7 @@
 .like {
     position: relative;
     width: 48px;
+    scale: 100%;
     @include display-flex-center-center;
     &:hover {
         cursor: pointer;
@@ -55,7 +56,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         &:hover {
-            animation: hover-like 0.5s ease-in-out forwards;
+            animation: hover-like 0.2s ease-in-out forwards;
         }
     }
 }
