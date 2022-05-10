@@ -286,11 +286,6 @@ form p {
 /* Media Queries pour TABLETTE et DESKTOP */
 /* tablette */
 @media all and (min-width: 720px) {
-  form input {
-    width: 720px;
-    border-radius: 4px;
-  }
-
   #fonctionnement {
     width: 720px;
   }
@@ -318,7 +313,7 @@ form p {
 
   #fonctionnement > div {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .steps {

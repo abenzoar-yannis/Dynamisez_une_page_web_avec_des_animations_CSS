@@ -131,12 +131,12 @@ form {
 /* Media Queries pour TABLETTE et DESKTOP */
 /* tablette */
 @media all and (min-width: 720px) {
-    form {
-        input {
-            width: 720px;
-            border-radius: 4px;
-        }
-    }
+    // form {
+    //     input {
+    //         width: 720px;
+    //         border-radius: 4px;
+    //     }
+    // }
     #fonctionnement {
         width: 720px;
     }
@@ -160,7 +160,7 @@ form {
     }
     #fonctionnement > div {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .steps {
         width: 325px;
