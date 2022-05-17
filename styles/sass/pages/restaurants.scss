@@ -51,13 +51,21 @@
 #services {
     width: 100%;
     padding: 32px 18px 0 18px;
-    // padding-top: 32px;
 }
 .service {
     width: 100%;
     margin-bottom: 32px;
     &_plats {
         width: 100%;
+        opacity: 0;
+        animation:  1s 3s apparition forwards;
+    }
+    @for $i from 1 through 3 {
+        &:nth-of-type(#{$i}n) {
+            .service_plats {
+                animation-delay: #{$i * 0.5}s;
+            }
+        }
     }
 }
 /* Carte des plats
@@ -79,13 +87,6 @@
         i {
             animation: rotation 0.4s linear;
             animation-iteration-count: 1;
-        }
-    }
-    opacity: 0;
-    animation:  1s 3s apparition forwards;
-    @for $i from 1 through 5 {
-        &:nth-of-type(#{$i}n) {
-            animation-delay: #{$i * 0.3}s;
         }
     }
 }

@@ -399,6 +399,17 @@ form p {
 }
 .service_plats {
   width: 100%;
+  opacity: 0;
+  animation: 1s 3s apparition forwards;
+}
+.service:nth-of-type(1n) .service_plats {
+  animation-delay: 0.5s;
+}
+.service:nth-of-type(2n) .service_plats {
+  animation-delay: 1s;
+}
+.service:nth-of-type(3n) .service_plats {
+  animation-delay: 1.5s;
 }
 
 /* Carte des plats
@@ -414,8 +425,6 @@ form p {
   background-color: white;
   cursor: pointer;
   overflow: hidden;
-  opacity: 0;
-  animation: 1s 3s apparition forwards;
 }
 .carte-de-plat:hover .content {
   min-width: calc(100% - 60px - 60px);
@@ -423,21 +432,6 @@ form p {
 .carte-de-plat:hover i {
   animation: rotation 0.4s linear;
   animation-iteration-count: 1;
-}
-.carte-de-plat:nth-of-type(1n) {
-  animation-delay: 0.3s;
-}
-.carte-de-plat:nth-of-type(2n) {
-  animation-delay: 0.6s;
-}
-.carte-de-plat:nth-of-type(3n) {
-  animation-delay: 0.9s;
-}
-.carte-de-plat:nth-of-type(4n) {
-  animation-delay: 1.2s;
-}
-.carte-de-plat:nth-of-type(5n) {
-  animation-delay: 1.5s;
 }
 
 .content {
